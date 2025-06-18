@@ -1,3 +1,17 @@
+const firstName = "Dejan";
+const lastName = "Budanovic";
+const birthYear = 1991;
+const thisYear = 2025;
+
+const fullName = firstName + " " + lastName;
+const age = thisYear - birthYear;
+
+const greeting = "Hello! My name is " + fullName + " and I am " + (age) + " years old.";
+console.log(greeting);
+
+const everythingIsOk = `Hello! My name is ${fullName} and I am ${age} years old. Yes. that's right ${firstName} ${lastName}, ${thisYear-birthYear}`;
+
+
 /*
  First name: Carlos
  Last name: Stevenson
@@ -21,5 +35,6 @@ module.exports = {
   birthYear: typeof birthYear === 'undefined' ? undefined : birthYear,
   greeting: typeof greeting === 'undefined' ? undefined : greeting,
   fullName: typeof fullName === 'undefined' ? undefined : fullName,
-  age: typeof age === 'undefined' ? undefined : age
+  age: typeof age === 'undefined' ? undefined : age,
+  everythingIsOk: typeof everythingIsOk === 'undefined' ? undefined : everythingIsOk
 }
